@@ -1,0 +1,47 @@
+body{
+    margin: 0;
+}
+.header{
+    display: flex;
+    justify-content: center;
+    font-size: 42px;
+    border-bottom: 3px groove;
+}
+
+.main-content{
+    display: flex;
+}
+
+.left-menu{
+    width: 200px;
+    border-right: 3px groove;
+}
+
+.content{
+    flex: 1;
+
+    display: flex;
+    flex-wrap: wrap;
+    min-height: calc(100vh - 51px);
+}
+
+.girl-block{
+    width: 200px;
+    height: 200px;
+    border: 1px solid;
+    border-radius: 10px;
+    margin: 10px;
+    padding: 5px;
+}
+.girl-block img{
+    max-width: 200px;
+    max-height: calc(200px - 20px);
+    border-radius: 10px;
+}
+
+.image-block{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: calc(200px - 20px);
+}
