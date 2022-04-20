@@ -1,6 +1,7 @@
 body{
     margin: 0;
 }
+
 .header{
     display: flex;
     justify-content: center;
@@ -27,11 +28,18 @@ body{
 
 .girl-block{
     width: 200px;
-    height: 200px;
+    height: calc(20px + 200px + 3px * 2 + 2px);
     border: 1px solid;
     border-radius: 10px;
     margin: 10px;
-    padding: 5px;
+}
+.name{
+    margin: 200px;
+}
+.girl-block .name{
+    text-align: center;
+    margin: 3px 0;
+    height: 20px;
 }
 .girl-block img{
     max-width: 200px;
@@ -40,8 +48,32 @@ body{
 }
 
 .image-block{
+    border-top: 1px solid;
+    border-bottom: 1px solid;
     display: flex;
     justify-content: center;
     align-items: center;
     height: calc(200px - 20px);
+}
+
+.buttons{
+    height: 20px;
+    display: flex;
+}
+.button{
+    flex: 1;
+    background: aqua;
+    border-right: 1px solid;
+    display: flex;
+    justify-content: center;
+}
+
+.button:first-child{
+    border-bottom-left-radius: 10px;
+    background: red;
+}
+
+.button:last-child{
+    border-bottom-right-radius: 10px;
+    border-right: none;
 }
