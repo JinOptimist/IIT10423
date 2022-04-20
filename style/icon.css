@@ -1,0 +1,27 @@
+.icon{
+    display: flex;
+    align-items: center;
+}
+.icon::before{
+    height: 20px;
+    width: 20px;
+    display: inline-block;
+    background-size: cover;
+    content: ' ';
+}
+
+.icon.home::before{
+    background-image: url(../images/icons/outline_home_black_24dp.png);
+}
+
+.icon.home:hover::before{
+    background-image: url(../images/icons/baseline_home_black_24dp.png);
+}
+
+.icon.diner::before{
+    background-image: url(../images/icons/outline_dining_black_24dp.png);
+}
+
+.icon.diner:hover::before{
+    background-image: url(../images/icons/baseline_dining_black_24dp.png);
+}
