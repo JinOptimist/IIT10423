@@ -1,24 +1,24 @@
-body{
+body {
     margin: 0;
 }
 
-.header{
+.header {
     display: flex;
     justify-content: center;
     font-size: 42px;
     border-bottom: 3px groove;
 }
 
-.main-content{
+.main-content {
     display: flex;
 }
 
-.left-menu{
+.left-menu {
     width: 200px;
     border-right: 3px groove;
 }
 
-.content{
+.content {
     flex: 1;
 
     display: flex;
@@ -26,28 +26,35 @@ body{
     min-height: calc(100vh - 51px);
 }
 
-.girl-block{
+.girl-block {
     width: 200px;
     height: calc(20px + 200px + 3px * 2 + 2px);
     border: 1px solid;
     border-radius: 10px;
     margin: 10px;
 }
-.name{
+
+.girl-block:hover {
+    border-color: brown;
+}
+
+.name {
     margin: 200px;
 }
-.girl-block .name{
+
+.girl-block .name {
     text-align: center;
     margin: 3px 0;
     height: 20px;
 }
-.girl-block img{
+
+.girl-block img {
     max-width: 200px;
     max-height: calc(200px - 20px);
     border-radius: 10px;
 }
 
-.image-block{
+.image-block {
     border-top: 1px solid;
     border-bottom: 1px solid;
     display: flex;
@@ -56,11 +63,12 @@ body{
     height: calc(200px - 20px);
 }
 
-.buttons{
+.buttons {
     height: 20px;
     display: flex;
 }
-.button{
+
+.button {
     flex: 1;
     background: aqua;
     border-right: 1px solid;
@@ -68,16 +76,70 @@ body{
     justify-content: center;
 }
 
-.button:first-child{
+.button:first-child {
     border-bottom-left-radius: 10px;
     background: red;
 }
 
-.button:last-child{
+.button:last-child {
     border-bottom-right-radius: 10px;
     border-right: none;
 }
 
-.help-link:hover{
+.help-link:hover {
     background: aqua;
+}
+
+.page {
+    display: none;
+}
+
+.page:target {
+    display: flex;
+}
+
+.popup {
+    position: fixed;
+    width: 100%;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup.hide{
+    display: none;
+}
+
+.popup .cover{
+    position: fixed;
+    background: black;
+    width: 100%;
+    height: 100vh;
+    opacity: 0.5;
+}
+
+.popup-content {
+    background: wheat;
+    width: 200px;
+    height: 150px;
+    z-index: 50;
+}
+
+#tabels td{
+    border: 1px solid;
+}
+
+#tabels tr{
+    height: 30px;
+}
+
+#tabels tr:nth-child(2n){
+    background-color: #ccc;
+}
+
+#tabels tr:hover{
+    background-color: aqua;
 }

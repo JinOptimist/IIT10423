@@ -3,68 +3,334 @@
 <head>
     <link href="style/style.css" rel="stylesheet" />
     <link href="style/icon.css" rel="stylesheet" />
+    <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script>
+        $(document).ready(function () {
+
+            $('.pay').click(function () {
+                $('.popup').addClass('hide');
+            });
+
+            $('.header').click(function () {
+                $('.popup').removeClass('hide');
+            });
+
+        });
+    </script>
 </head>
 
 <body>
-    <div class="header icon home">Girl Anime</div>
+    <div class="popup hide">
+        <div class="cover"></div>
+        <div class="popup-content">
+            ЗАПЛАТИ НАМ
+            <input type="button" class="pay" value="плачу" />
+        </div>
+    </div>
+    <div class="header icon home" id="head">Girl Anime</div>
     <div class="main-content">
         <div class="left-menu">
-            <a href="https://flukeout.github.io/" class="icon diner" target="_blank">
-                <div class="help-link">css diner</div>
-            </a>
-            <a href="https://flexboxfroggy.com/#ru" class="icon" target="_blank">
-                <div class="help-link">flex froggy</div>
-            </a>
-            <a href="https://htmlacademy.ru/courses/297/run/1" class="icon" target="_blank">
-                <div class="help-link">html academy</div>
-            </a>
-            <a href=" https://fonts.google.com/icons" class="icon" target="_blank">
-                <div class="help-link">icons</div>
-            </a>
+            <div class="left-menu-fly">
+                <a href="#girls" class="icon">
+                    <div class="help-link">Anime Girl</div>
+                </a>
+                <a href="#boys" class="icon">
+                    <div class="help-link">Anime Boy</div>
+                </a>
+                <a href="#cats" class="icon">
+                    <div class="help-link">Anime Cat</div>
+                </a>
+                <a href="#tabels" class="icon">
+                    <div class="help-link">Tabels</div>
+                </a>
+
+                <a href="https://flukeout.github.io/" class="icon diner" target="_blank">
+                    <div class="help-link">css diner</div>
+                </a>
+                <a href="https://flexboxfroggy.com/#ru" class="icon" target="_blank">
+                    <div class="help-link">flex froggy</div>
+                </a>
+                <a href="https://htmlacademy.ru/courses/297/run/1" class="icon" target="_blank">
+                    <div class="help-link">html academy</div>
+                </a>
+                <a href="https://fonts.google.com/icons" class="icon" target="_blank">
+                    <div class="help-link">icons</div>
+                </a>
+            </div>
         </div>
         <div class="content">
-            <div class="girl-block">
-                <div class="name">girl1</div>
-                <div class="image-block">
-                    <img src="images/Girl1.jpg" />
+            <div class="girls page" id="girls">
+                <div class="girl-block">
+                    <div class="name">girl1</div>
+                    <div class="image-block">
+                        <img src="images/Girl1.jpg" />
+                    </div>
+                    <div class="buttons">
+                        <span class="button">+</span>
+                        <span class="button">x</span>
+                        <span class="button">-</span>
+                    </div>
                 </div>
-                <div class="buttons">
-                    <span class="button">+</span>
-                    <span class="button">x</span>
-                    <span class="button">-</span>
+
+                <div class="girl-block">
+                    <div class="name">girl4</div>
+                    <div class="image-block">
+                        <img src="images/Girl4.jpg" />
+                    </div>
+                    <div class="buttons">
+
+                        <span class="button">button 3</span>
+                        <span class="button">button 1</span>
+                    </div>
+                </div>
+
+                <div class="girl-block">
+                    <div class="name">girl2</div>
+                    <div class="image-block">
+                        <img src="images/Girl2.jpg" />
+                    </div>
+                    <div class="buttons">
+                        <span class="button">but 1</span>
+                        <span class="button">bun 2</span>
+                        <span class="button">bu 3</span>
+                        <span class="button">bon 4</span>
+                    </div>
+                </div>
+
+                <div class="girl-block">
+                    <div class="name">girl3</div>
+                    <div class="image-block">
+                        <img src="images/Girl3.jpg" />
+                    </div>
                 </div>
             </div>
 
-            <div class="girl-block">
-                <div class="name">girl4</div>
-                <div class="image-block">
-                    <img src="images/Girl4.jpg" />
-                </div>
-                <div class="buttons">
+            <div class="boys page" id="boys">
+                BOYS
+            </div>
 
-                    <span class="button">button 3</span>
-                    <span class="button">button 1</span>
+            <div class="cats page" id="cats">
+                <div>
+                    <div>Создание котика</div>
+                    <div>
+                        <label>
+                            Название <input type="text" placeholder="Название" />
+                        </label>
+                    </div>
+                    <div>
+                        Пароль <input type="password" placeholder="НЕ 123456" />
+                    </div>
+                    <div>
+                        Цвет <input type="color" />
+                    </div>
+                    <div>
+                        Возраст <input type="number" min="18" max="50" value="20" />
+                    </div>
+                    <div>
+                        Аватар <input type="file" />
+                    </div>
+
+                    <div>
+                        Пол:
+                        <label for="male">Мальчик</label>
+                        <input type="radio" name="sex" id="male" />
+
+                        <label for="female">Девочка</label>
+                        <input type="radio" name="sex" id="female" />
+                    </div>
+                    <div>
+                        Лысый?:
+                        <label>
+                            ДА<input disabled="disabled" type="radio" name="hair" />
+                        </label>
+                        <label>
+                            НЕТ<input type="radio" name="hair" />
+                        </label>
+                    </div>
+
+                    <div>
+                        Хобби:
+                        <label>
+                            ДА<input type="checkbox" name="hoobie" />
+                        </label>
+                        <label>
+                            Бассейн<input type="checkbox" name="hoobie" />
+                        </label>
+                        <label>
+                            Шахматы<input type="checkbox" name="hoobie" />
+                        </label>
+                    </div>
+                    <div>
+                        Страна:
+                        <select>
+                            <option>
+                                Беларусь
+                            </option>
+                            <option>
+                                Россия
+                            </option>
+                            <option>
+                                Польша
+                            </option>
+                        </select>
+                    </div>
+
+                    <div>
+                        <input type="button" value="Жмяк 2" />
+                        <button>Жмяк 1</button>
+                    </div>
                 </div>
             </div>
 
-            <div class="girl-block">
-                <div class="name">girl2</div>
-                <div class="image-block">
-                    <img src="images/Girl2.jpg" />
-                </div>
-                <div class="buttons">
-                    <span class="button">but 1</span>
-                    <span class="button">bun 2</span>
-                    <span class="button">bu 3</span>
-                    <span class="button">bon 4</span>
-                </div>
-            </div>
-
-            <div class="girl-block">
-                <div class="name">girl3</div>
-                <div class="image-block">
-                    <img src="images/Girl3.jpg" />
-                </div>
+            <div class="tabels page" id="tabels">
+                <table>
+                    <thead>
+                        <th>
+                            Номер
+                        </th>
+                        <th>
+                            Название
+                        </th>
+                        <th>
+                            Цена
+                        </th>
+                        <th>
+                            Размер
+                        </th>
+                    </thead>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td>Красота</td>
+                        <td>-50</td>
+                        <td>60</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
