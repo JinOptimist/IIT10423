@@ -25,3 +25,7 @@
 .icon.diner:hover::before{
     background-image: url(../images/icons/baseline_dining_black_24dp.png);
 }
+
+.icon.search::before{
+    background-image: url(../images/icons/search_FILL0_wght400_GRAD0_opsz48.png);
+}

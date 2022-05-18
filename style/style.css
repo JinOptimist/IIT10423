@@ -4,9 +4,23 @@ body {
 
 .header {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     font-size: 42px;
     border-bottom: 3px groove;
+}
+
+.avatar-block {
+    width: 100px;
+}
+
+.avatar-block-fly {
+    position: absolute;
+}
+
+.avatar {
+    max-width: 100px;
+    max-height: 100px;
+    position: relative;
 }
 
 .main-content {
@@ -18,6 +32,10 @@ body {
     border-right: 3px groove;
 }
 
+.left-menu-fly {
+    position: fixed;
+}
+
 .content {
     flex: 1;
 
@@ -26,12 +44,51 @@ body {
     min-height: calc(100vh - 51px);
 }
 
+.search-block {
+    background-color: #ccc;
+    position: fixed;
+    width: 20px;
+    height: 20px;
+    overflow: hidden;
+}
+
+.search-block:hover {
+    width: auto;
+    height: auto;
+}
+
+.search-block .title {
+    display: none;
+}
+
+.search-block:hover .title {
+    display: inline;
+}
+
 .girl-block {
     width: 200px;
     height: calc(20px + 200px + 3px * 2 + 2px);
     border: 1px solid;
     border-radius: 10px;
     margin: 10px;
+}
+
+.girl-block .text-block {
+    border-top: 1px solid;
+    height: 200px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+}
+
+
+.girl-block .text-block .text {
+    margin-bottom: 20px;
+}
+
+.button-block-fly {
+    position: absolute;
 }
 
 .girl-block:hover {
@@ -98,6 +155,10 @@ body {
     display: flex;
 }
 
+.girls {
+    flex-wrap: wrap;
+}
+
 .popup {
     position: fixed;
     width: 100%;
@@ -109,11 +170,11 @@ body {
     align-items: center;
 }
 
-.popup.hide{
+.popup.hide {
     display: none;
 }
 
-.popup .cover{
+.popup .cover {
     position: fixed;
     background: black;
     width: 100%;
@@ -128,18 +189,18 @@ body {
     z-index: 50;
 }
 
-#tabels td{
+#tabels td {
     border: 1px solid;
 }
 
-#tabels tr{
+#tabels tr {
     height: 30px;
 }
 
-#tabels tr:nth-child(2n){
+#tabels tr:nth-child(2n) {
     background-color: #ccc;
 }
 
-#tabels tr:hover{
+#tabels tr:hover {
     background-color: aqua;
 }
