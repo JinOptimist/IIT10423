@@ -29,3 +29,39 @@
 .icon.search::before{
     background-image: url(../images/icons/search_FILL0_wght400_GRAD0_opsz48.png);
 }
+
+.icon.boy::before{
+    background-image: url(../images/icons/man_2_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.girl::before{
+    background-image: url(../images/icons/woman_2_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.cat::before{
+    background-image: url(../images/icons/pets_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.table::before{
+    background-image: url(../images/icons/table_restaurant_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.leaf::before{
+    background-image: url(../images/icons/eco_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.academy::before{
+    background-image: url(../images/icons/school_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.add-image::before{
+    background-image: url(../images/icons/add_photo_alternate_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.help::before{
+    background-image: url(../images/icons/help_FILL0_wght400_GRAD0_opsz48.png);
+}
+
+.icon.fitness::before{
+    background-image: url(../images/icons/fitness_center_FILL0_wght400_GRAD0_opsz48.png);
+}
