@@ -4,16 +4,9 @@
     <link href="style/style.css" rel="stylesheet" />
     <link href="style/icon.css" rel="stylesheet" />
     <script src="scripts/jquery-3.6.0.min.js"></script>
+    <script src="scripts/index.js"></script>
     <script>
         $(document).ready(function () {
-
-            $('.pay').click(function () {
-                $('.popup').addClass('hide');
-            });
-
-            $('.header').click(function () {
-                $('.popup').removeClass('hide');
-            });
 
         });
     </script>
@@ -146,7 +139,7 @@
                     </div>
                     <div class="buttons">
                         <span class="button">+</span>
-                        <span class="button">x</span>
+                        <span class="button delete-girl">x</span>
                         <span class="button">-</span>
                     </div>
                 </div>
@@ -159,7 +152,7 @@
                     <div class="buttons">
 
                         <span class="button">button 3</span>
-                        <span class="button">button 1</span>
+                        <span class="button delete-girl">Delete</span>
                     </div>
                 </div>
 
@@ -364,18 +357,31 @@
                     <div>
                         Пол:
                         <label for="male">Мальчик</label>
-                        <input type="radio" name="sex" id="male" />
+                        <input type="radio" name="sex" id="male" value="m" />
 
                         <label for="female">Девочка</label>
-                        <input type="radio" name="sex" id="female" />
+                        <input type="radio" name="sex" id="female" value="f" />
                     </div>
                     <div>
                         Лысый?:
                         <label>
-                            ДА<input disabled="disabled" type="radio" name="hair" />
+                            ДА<input type="radio" name="hair" id="bold-yes" value="bold" />
                         </label>
                         <label>
-                            НЕТ<input type="radio" name="hair" />
+                            НЕТ<input type="radio" name="hair"  id="bold-no" value="hair"  />
+                        </label>
+                    </div>
+
+                    <div class="hair-color-block">
+                        Цвет волос:
+                        <label>
+                            Красный<input type="radio" name="hair-color" />
+                        </label>
+                        <label>
+                            Синий<input type="radio" name="hair-color" />
+                        </label>
+                        <label>
+                            Зелёный<input type="radio" name="hair-color" />
                         </label>
                     </div>
 
