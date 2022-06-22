@@ -1,4 +1,4 @@
-Задачи на 10 баллов
+Задание на 10 баллов:
 1) gallery
 2) image + name + button
 3) block for filltering
